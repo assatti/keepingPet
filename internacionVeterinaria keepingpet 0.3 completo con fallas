@@ -20,7 +20,7 @@ Algoritmo keepingPet
 	 Escribir "3. Modificar datos de una mascota"
 	 Escribir "4. Dar de alta una mascota"
 	 Escribir "5. Salir"
-	 Escribir "Elija una opción:"
+	 Escribir "Elija una opciÃ³n:"
 	 Leer opc
 	
       Segun opc Hacer
@@ -30,21 +30,23 @@ Algoritmo keepingPet
 				 Escribir "Ingrese el nombre de la mascota:"
 				 Leer mascotasNombres[5];
 				 
-				 Escribir "Ingrese la medicación que toma:"
+				 Escribir "Ingrese la medicaciÃ³n que toma:"
 				 Leer mascotasMedicacion[5];
 				 
-				 Escribir "Especifique si se realizarán estudios complementarios"
+				 Escribir "Especifique si se realizarÃ¡n estudios complementarios"
 				 Leer mascotasEstudiosComplementarios[5];
 				 
-				 Escribir"Ingrese la cantidad de días que estará internada:"
+				 Escribir"Ingrese la cantidad de dÃ­as que estarÃ¡ internada:"
 				 Leer mascotasDiasInternado[5];
 				 
 				 Escribir "Ingrese datos complementarios"
 				 Leer mascotasDatosComplementarios[5];
+
+                                  totalMascotas=totalMascotas+1
 				 
 				 Escribir "-----> SE REGISTRO CORRECTAMENTE  <-----"
 			 SiNo
-				 Escribir "No hay lugares disponibles para internación."              // sin lugar libre
+				 Escribir "No hay lugares disponibles para internaciÃ³n."              // sin lugar libre
 			 Fin Si
 		 2:
 			 Escribir "Ingrese el nombre de la mascota para consultar los datos:"              // ingresar consulta
@@ -73,17 +75,17 @@ Algoritmo keepingPet
 			 Encontrado <- Falso
 			 si nombreModificacion= mascotasNombres[5]
 				 Para i = 1 hasta totalMascotas hacer
-					 Escribir "-----> Modificación de datos de ", nombreModificar, " <-----"
-					 Escribir "1. Modificar medicación"
+					 Escribir "-----> ModificaciÃ³n de datos de ", nombreModificar, " <-----"
+					 Escribir "1. Modificar medicaciÃ³n"
 					 Escribir "2. Modificar estudios complementarios"
-					 Escribir "3. Modificar días internacion"
+					 Escribir "3. Modificar dÃ­as internacion"
 					 Escribir "4. Modificar datos complementarios"
 					 Escribir "5. Salir del menu"
-					 Escribir "Elija una opción:"
+					 Escribir "Elija una opciÃ³n:"
 					 Leer opcionModificacion
 					 
 					 segun opcionModificacion hacer                                                       // espacio de modificaciones
-						 1:Escribir "Ingrese la nueva medicación:"
+						 1:Escribir "Ingrese la nueva medicaciÃ³n:"
 							 Leer mascotasMedicacion[5]
 						 2: Escribir "Ingrese la modificacion de los estudios complementarios"
 							 Leer mascotasEstudiosComplementarios[5]
